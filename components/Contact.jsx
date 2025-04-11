@@ -15,22 +15,24 @@ const Contact = () => {
     // Enter your web3 froms access key below
     formData.append("access_key", "9bd21b46-a012-481c-9ac1-03388daf4e47");
 
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      body: formData
-    });
-   console.log(response,"response")
-    const data = await response.json();
-
-    if (data.success) {
-      setResult("Form Submitted Successfully");
-      event.target.reset();
-    } else {
-      console.log("Error", data);
-      setResult(data.message);
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      });
+      const data = await response.json();
+      if (data.success) {
+        setResult("Form Submitted Successfully");
+        event.target.reset();
+      } else {
+        console.log("Error", data);
+        setResult(data.message);
+      }
+    } catch (error) {
+      console.error("Submission failed", error);
+      setResult("Something went wrong. Please try again.");
     }
-  };
-
+  }    
 
   return (
     <motion.div
