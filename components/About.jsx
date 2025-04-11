@@ -34,7 +34,7 @@ const About = ({isDarkMode}) => {
             whileInView={{opacity: 1, scale: 1}}
             transition={{duration: 0.6}}
             className='w-64 sm:w-80 rounded-3xl max-w-none'>
-                <Image src={assets.user_image} alt='user' className='w-full rounded-3xl'/>
+                <Image src={assets.profile_img} alt='user' className='w-full rounded-3xl'/>
             </motion.div>
             <motion.div 
             initial={{opacity: 0}}
@@ -42,7 +42,7 @@ const About = ({isDarkMode}) => {
             transition={{duration: 0.6, delay: 0.8}}
             className='flex-1'>
                 <p className='mb-10 max-w-2xl font-Ovo'
-                >I am an experienced Frontend Developer with over a decade of professional expertise in the field. Throughout my career, I have had the privilege of collaborating with prestigious organizations, contributing to their success and growth.</p>
+                >I am a self learned Full Stack Developer. Throughout my self learning path, I have build multiple major and mini projects including an Ecommerce Website and an E-Learning platform using MERN Stack.</p>
 
                 <motion.ul
                 initial={{opacity: 0}}

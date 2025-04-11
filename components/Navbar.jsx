@@ -60,22 +60,18 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
         {/* -- ----- mobile menu ------  -- */}
 
         <ul ref={sideMenuRef} className='flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 dark:bg-darkHover dark:text-white'>
-
-            <div className='absolute right-6 top-6' onClick={closeMenu}>
-                <Image src={isDarkMode ? assets.close_white : assets.close_black} alt='' className='w-5 cursor-pointer' />
-            </div>
-
+        <div className='absolute right-6 top-6' onClick={closeMenu}>
+            <Image src={isDarkMode ? assets.close_white : assets.close_black} alt='' className='w-5 cursor-pointer' />
+        </div>
             <li><a className='font-Ovo' onClick={closeMenu} href="#top">Home</a></li>
             <li><a className='font-Ovo' onClick={closeMenu} href="#about">About me</a></li>
             <li><a className='font-Ovo' onClick={closeMenu} href="#services">Services</a></li>
             <li><a className='font-Ovo' onClick={closeMenu} href="#work">My Work</a></li>
             <li><a className='font-Ovo' onClick={closeMenu} href="#contact">Contact me</a></li>
         </ul>
-
-
       </nav>
     </>
   )
 }
 
-export default Navbar
+export default Navbar;
