@@ -35,6 +35,12 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+import react from './react.png'
+import next from './next.png';
+import node from './node.jpeg';
+import postgresql from './postgresql.jpg';
+import html from './html.webp';
+import css from './css.webp';
 
 export const assets = {
     user_image,
@@ -73,45 +79,70 @@ export const assets = {
     right_arrow,
     send_icon,
     right_arrow_bold,
-    right_arrow_bold_dark
+    right_arrow_bold_dark,
+    node,
+    next,
+    react,
+    postgresql,
+    html,
+    css,
 };
 
 export const workData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
+        title: 'Doctors Appointment Website',
+        description: 'React Application',
         bgImage: '/work-1.png',
+        link: 'https://doctor-s-appointment-three.vercel.app/',
+    },
+     {
+        title: 'E-Commerce Website',
+        description: 'Full Stack Application',
+        bgImage: '/work-1.png',
+        link: 'https://free.momentstore.world/',
+    },
+     {
+        title: 'E-learning Website',
+        description: 'Full Stack Application',
+        bgImage: '/work-1.png',
+        link: 'https://tutorg.vercel.app/',
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
+        title: 'QR Bridge Website',
+        description: 'Full Stack Web development',
         bgImage: '/work-2.png',
+        link: 'https://qrbridge.in/dashboard',
     },
     {
-        title: 'Photography site',
-        description: 'Web Design',
+        title: 'Netflix Clone Website',
+        description: 'React Application',
         bgImage: '/work-3.png',
+        link: 'https://netflixclone-ten-silk.vercel.app/',
     },
     {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
+        title: 'Corso Training Website',
+        description: 'Bootstrap & SASS',
         bgImage: '/work-4.png',
+        link: 'https://corsotrainingwebsite.netlify.app/',
+    },
+    {
+        title: 'Blog Website',
+        description: 'NextJS & MongoDB',
+        bgImage: '/work-1.png',
+        link: 'https://blog-application-lyart-pi.vercel.app/',
     },
 ]
 
-export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
-]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'C, JavaScript, Java, SQL' },
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Frontend', description: 'HTML, CSS, Bootstrap,TailwindCSS, React Js, Next Js' },
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Backend', description: 'NodeJS, ExpressJS, MongoDB, mySQL, postgreSQL' },
+    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Mechanical Engineering,CUSAT' },
+    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Certificate', description: 'Full Stack Web Development,Udemy' },
+    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built Two Major Projects and several mini projects' }
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git,assets.node,assets.react,assets.postgresql,assets.html,assets.css
 ];
