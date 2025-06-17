@@ -1,30 +1,34 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
+    './app/**/*.{js,ts,jsx,tsx}',
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
-        lightHover: '#fcf4ff',
-        darkHover: '#2a004a',
-        darkTheme: '#11001F',
+        darkTheme: '#111827',
+        lightHover: '#F3F4F6',
+        darkHover: '#1F2937',
+        accent: '#10B981',
+        accentDark: '#059669',
       },
       fontFamily: {
-        Outfit: ["Outfit", "sans-serif"],
-        Ovo: ["Ovo", "serif"]
+        Outfit: ['Outfit', 'sans-serif'],
+        Ovo: ['Ovo', 'serif'],
       },
-      boxShadow: {
-        'black' : '4px 4px 0 #000',
-        'white' : '4px 4px 0 #fff',
+      animation: {
+        'fade-in': 'fadeIn 0.5s ease-in-out',
       },
-      gridTemplateColumns: {
-        'auto': 'repeat(auto-fit, minmax(200px, 1fr))'
-      }
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1 },
+        },
+      },
     },
   },
-  darkMode: 'selector',
   plugins: [],
 };

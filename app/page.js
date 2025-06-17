@@ -1,42 +1,81 @@
-'use client'
-import { useEffect, useState } from "react";
-import About from "../components/About";
-import Contact from "../components/Contact";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
-import Navbar from "../components/Navbar";
-import Work from "../components/Work";
+'use client';
+import { useEffect, useState } from 'react';
+import About from '../components/About';
+import Contact from '../components/Contact';
+import Footer from '../components/Footer';
+import Header from '../components/Header';
+import Navbar from '../components/Navbar';
+import Work from '../components/Work';
+import Image from 'next/image';
+import { assets } from '../assets/assets'; 
 
 export default function Home() {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [showScrollUp, setShowScrollUp] = useState(false); 
 
- const [isDarkMode, setIsDarkMode] = useState(false);
+  useEffect(() => {
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      setIsDarkMode(true);
+    } else {
+      setIsDarkMode(false);
+    }
+  }, []);
 
- useEffect(()=>{
-  if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-    setIsDarkMode(true)
-  }else{
-    setIsDarkMode(false)
-  }
- },[])
-
- useEffect(()=>{
-    if(isDarkMode){
+  useEffect(() => {
+    if (isDarkMode) {
       document.documentElement.classList.add('dark');
       localStorage.theme = 'dark';
-    }else{
+    } else {
       document.documentElement.classList.remove('dark');
       localStorage.theme = '';
     }
- },[isDarkMode])
+  }, [isDarkMode]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 300) { 
+        setShowScrollUp(true);
+      } else {
+        setShowScrollUp(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
 
   return (
     <>
-    <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>
-    <Header isDarkMode={isDarkMode} />
-    <About isDarkMode={isDarkMode} />
-    <Work isDarkMode={isDarkMode} />
-    <Contact isDarkMode={isDarkMode} />
-    <Footer isDarkMode={isDarkMode} />
+      <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+      <main className="pt-10 md:pt-14">
+        <Header isDarkMode={isDarkMode} />
+        <About isDarkMode={isDarkMode} />
+        <Work isDarkMode={isDarkMode} />
+        <Contact isDarkMode={isDarkMode} />
+        <Footer isDarkMode={isDarkMode} />
+      </main>
+
+      {/* Scroll Up Button */}
+      {showScrollUp && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-6 right-6 z-50 p-3 bg-emerald-500 text-white rounded-full shadow-lg hover:bg-emerald-600 transition-all duration-300"
+          aria-label="Scroll to top"
+        >
+          <Image
+            src={isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_bold}
+            alt="Scroll Up"
+            className="w-5 h-5 rotate-[-90deg]" 
+          />
+        </button>
+      )}
     </>
   );
 }
