@@ -73,7 +73,7 @@ const Work = ({ isDarkMode }) => {
                 </p>
               </div>
               <div className="w-10 h-10 bg-emerald-500 rounded-full flex items-center justify-center group-hover:bg-emerald-600 transition-colors duration-200">
-                <Image src={assets.send_icon} alt="Send" className="w-5" />
+                {assets.qrBridge && <Image src={assets.qrBridge} alt="Send" className="w-5" />}
               </div>
             </div>
           </motion.a>
