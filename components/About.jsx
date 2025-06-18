@@ -1,4 +1,4 @@
-import { assets, infoList, toolsData } from '@/assets/assets';
+import { assets, infoList } from '@/assets/assets';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
@@ -49,7 +49,7 @@ const About = ({ isDarkMode }) => {
           className="flex-1"
         >
           <p className="mb-8 max-w-2xl font-Outfit text-lg text-gray-600 dark:text-gray-300">
-            I am a self-taught Full Stack Developer with hands-on experience building web applications, including an e-commerce website and an e-learning platform using the MERN stack.
+            I worked as a Mechanical Engineer specializing in estimation at WALCO MIDDLE EAST WLL for five years before transitioning into Web Development. In 2024, I began my journey in this field and have since gained hands-on experience by building real-world applications, including a full-featured e-commerce website and an e-learning platform using the MERN stack.
           </p>
           <motion.ul
             initial={{ opacity: 0 }}
@@ -66,31 +66,6 @@ const About = ({ isDarkMode }) => {
                 <Image src={isDarkMode ? iconDark : icon} alt={title} className="w-8 mb-4" />
                 <h3 className="font-Outfit font-semibold text-gray-900 dark:text-white">{title}</h3>
                 <p className="text-gray-600 dark:text-gray-300 text-sm">{description}</p>
-              </motion.li>
-            ))}
-          </motion.ul>
-          <motion.h4
-            initial={{ y: 20, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={{ delay: 1.3, duration: 0.5 }}
-            className="my-6 font-Outfit text-gray-700 dark:text-gray-300"
-          >
-            Tools I Use
-          </motion.h4>
-          <motion.ul
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ delay: 1.5, duration: 0.6 }}
-            className="flex flex-wrap items-center gap-4"
-          >
-            {toolsData.map((tool, index) => (
-              <motion.li
-                whileHover={{ scale: 1.1 }}
-                className="relative w-16 h-16 border border-gray-200 dark:border-gray-700 rounded-lg flex items-center justify-center bg-white dark:bg-gray-800 hover:shadow-md transition-all duration-300 group"
-                key={index}
-              >
-                <Image src={tool} alt="Tool" className="w-10" />
-                <span className="absolute -top-8 opacity-0 group-hover:opacity-100 bg-gray-900 text-white text-xs rounded py-1 px-2 transition-opacity duration-200">Tool Name</span>
               </motion.li>
             ))}
           </motion.ul>

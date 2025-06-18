@@ -41,6 +41,14 @@ import node from './node.jpeg';
 import postgresql from './postgresql.jpg';
 import html from './html.webp';
 import css from './css.webp';
+import doctorsApp from './public/doctorsApp.png'
+import ecommerce from './public/ecommerce.png'
+import elearning from './public/elearning.png'
+import qrBridge from './public/qrBridge.png'
+import netflixClone from './public/netflixClone.png'
+import corsoTraining from './public/corsotraining.png'
+import blogApp from './public/blogApp.png'
+import bonMarineAsia from './public/bonMarineAsia.png'
 
 export const assets = {
   user_image,
@@ -86,49 +94,57 @@ export const assets = {
   postgresql,
   html,
   css,
+  doctorsApp,
+  ecommerce,
+  elearning,
+  qrBridge,
+  netflixClone,
+  corsoTraining,
+  blogApp,
+  bonMarineAsia
 };
 
 export const workData = [
   {
-    title: 'Doctors Appointment Website',
+    title: 'Ship Chandling Management Website',
     description: 'React Application',
-    bgImage: '/work-1.png', // Updated path
-    link: 'https://doctor-s-appointment-three.vercel.app/',
-  },
-  {
-    title: 'E-Commerce Website',
-    description: 'Full Stack Application',
-    bgImage: '/work-1.png', // Updated path
-    link: 'https://free.momentstore.world/',
+    bgImage: assets.bonMarineAsia,
+    link: 'https://bon-marine-asia.vercel.app/',
   },
   {
     title: 'E-learning Website',
     description: 'Full Stack Application',
-    bgImage: '/work-1.png', // Updated path
+    bgImage: assets.elearning,
     link: 'https://tutorg.vercel.app/',
+  },
+  {
+    title: 'E-Commerce Website',
+    description: 'Full Stack Application',
+    bgImage: assets.ecommerce,
+    link: 'https://e-commerce-zzzk.onrender.com/',
+  },
+  {
+    title: 'Doctors Appointment Website',
+    description: 'React Application',
+    bgImage: assets.doctorsApp,
+    link: 'https://doctor-s-appointment-three.vercel.app/',
   },
   {
     title: 'QR Bridge Website',
     description: 'Full Stack Web development',
-    bgImage: '/work-2.png', // Updated path
+    bgImage: assets.qrBridge,
     link: 'https://qrbridge.in/dashboard',
-  },
-  {
-    title: 'Netflix Clone Website',
-    description: 'React Application',
-    bgImage: '/work-3.png', // Updated path
-    link: 'https://netflixclone-ten-silk.vercel.app/',
   },
   {
     title: 'Corso Training Website',
     description: 'Bootstrap & SASS',
-    bgImage: '/work-4.png', // Updated path
+    bgImage: assets.corsoTraining,
     link: 'https://corsotrainingwebsite.netlify.app/',
   },
   {
     title: 'Blog Website',
     description: 'NextJS & MongoDB',
-    bgImage: '/work-4.png', // Updated path
+    bgImage: assets.blogApp,
     link: 'https://blog-application-lyart-pi.vercel.app/',
   },
 ];
@@ -143,14 +159,14 @@ export const infoList = [
 ];
 
 export const toolsData = [
-  assets.vscode,
-  assets.firebase,
-  assets.mongodb,
-  assets.figma,
-  assets.git,
-  assets.node,
-  assets.react,
-  assets.postgresql,
-  assets.html,
-  assets.css,
+  { icon: assets.vscode, name: 'VS Code' },
+  { icon: assets.firebase, name: 'Firebase' },
+  { icon: assets.mongodb, name: 'MongoDB' },
+  { icon: assets.figma, name: 'Figma' },
+  { icon: assets.git, name: 'Git' },
+  { icon: assets.node, name: 'Node.js' },
+  { icon: assets.react, name: 'React' },
+  { icon: assets.postgresql, name: 'PostgreSQL' },
+  { icon: assets.html, name: 'HTML' },
+  { icon: assets.css, name: 'CSS' },
 ];

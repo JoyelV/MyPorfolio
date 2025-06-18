@@ -7,14 +7,19 @@ import Header from '../components/Header';
 import Navbar from '../components/Navbar';
 import Work from '../components/Work';
 import Image from 'next/image';
-import { assets } from '../assets/assets'; 
+import { assets } from '../assets/assets';
+import Skills from '@/components/Skills';
+import Testimonials from '@/components/Testimonials';
 
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(false);
-  const [showScrollUp, setShowScrollUp] = useState(false); 
+  const [showScrollUp, setShowScrollUp] = useState(false);
 
   useEffect(() => {
-    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    if (
+      localStorage.theme === 'dark' ||
+      (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+    ) {
       setIsDarkMode(true);
     } else {
       setIsDarkMode(false);
@@ -33,7 +38,7 @@ export default function Home() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 300) { 
+      if (window.scrollY > 300) {
         setShowScrollUp(true);
       } else {
         setShowScrollUp(false);
@@ -54,11 +59,25 @@ export default function Home() {
   return (
     <>
       <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-      <main className="pt-10 md:pt-14">
-        <Header isDarkMode={isDarkMode} />
-        <About isDarkMode={isDarkMode} />
-        <Work isDarkMode={isDarkMode} />
-        <Contact isDarkMode={isDarkMode} />
+      <main className="pt-15 md:pt-20">
+        <section id="home">
+          <Header isDarkMode={isDarkMode} />
+        </section>
+        <section id="about-me">
+          <About isDarkMode={isDarkMode} />
+        </section>
+        <section id="skills">
+          <Skills isDarkMode={isDarkMode} />
+        </section>
+        <section id="my-projects">
+          <Work isDarkMode={isDarkMode} />
+        </section>
+        <section id="testimonials">
+          <Testimonials isDarkMode={isDarkMode} />
+        </section>
+        <section id="contact-me">
+          <Contact isDarkMode={isDarkMode} />
+        </section>
         <Footer isDarkMode={isDarkMode} />
       </main>
 
@@ -72,7 +91,7 @@ export default function Home() {
           <Image
             src={isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_bold}
             alt="Scroll Up"
-            className="w-5 h-5 rotate-[-90deg]" 
+            className="w-5 h-5 rotate-[-90deg]"
           />
         </button>
       )}

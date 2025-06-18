@@ -55,7 +55,7 @@ const Work = ({ isDarkMode }) => {
             <Image
               src={project.bgImage}
               alt={project.title}
-              width={400}
+              width={300}
               height={256}
               className="w-full h-64 object-cover"
               style={{ width: "auto" }}
