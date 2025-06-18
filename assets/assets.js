@@ -132,13 +132,13 @@ export const workData = [
   {
     title: 'QR Bridge Website',
     description: 'Full Stack Web development',
-    bgImage: assets.corsoTraining,
+    bgImage: assets.qrBridge,
     link: 'https://qrbridge.in/dashboard',
   },
   {
     title: 'Corso Training Website',
     description: 'Bootstrap & SASS',
-    bgImage: assets.qrBridge,
+    bgImage: assets.corsoTraining,
     link: 'https://corsotrainingwebsite.netlify.app/',
   },
   {
