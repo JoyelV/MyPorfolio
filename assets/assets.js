@@ -44,7 +44,6 @@ import css from './css.webp';
 import doctorsApp from './public/doctorsApp.png'
 import ecommerce from './public/ecommerce.png'
 import elearning from './public/elearning.png'
-import qrBridge from './public/qrBridge.png'
 import netflixClone from './public/netflixClone.png'
 import corsoTraining from './public/corsotraining.png'
 import blogApp from './public/blogApp.png'
@@ -97,7 +96,6 @@ export const assets = {
   doctorsApp,
   ecommerce,
   elearning,
-  qrBridge,
   netflixClone,
   corsoTraining,
   blogApp,
@@ -132,7 +130,7 @@ export const workData = [
   {
     title: 'QR Bridge Website',
     description: 'Full Stack Web development',
-    bgImage: assets.qrBridge,
+    bgImage: assets.corsoTraining,
     link: 'https://qrbridge.in/dashboard',
   },
   {
