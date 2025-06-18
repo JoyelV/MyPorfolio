@@ -48,6 +48,7 @@ import netflixClone from './public/netflixClone.png'
 import corsoTraining from './public/corsotraining.png'
 import blogApp from './public/blogApp.png'
 import bonMarineAsia from './public/bonMarineAsia.png'
+import qrBridge from './public/work-2.png'
 
 export const assets = {
   user_image,
@@ -99,7 +100,8 @@ export const assets = {
   netflixClone,
   corsoTraining,
   blogApp,
-  bonMarineAsia
+  bonMarineAsia,
+  qrBridge
 };
 
 export const workData = [
@@ -136,7 +138,7 @@ export const workData = [
   {
     title: 'Corso Training Website',
     description: 'Bootstrap & SASS',
-    bgImage: assets.corsoTraining,
+    bgImage: assets.qrBridge,
     link: 'https://corsotrainingwebsite.netlify.app/',
   },
   {
