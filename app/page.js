@@ -10,10 +10,24 @@ import Image from 'next/image';
 import { assets } from '../assets/assets';
 import Skills from '@/components/Skills';
 import Testimonials from '@/components/Testimonials';
+import { useRouter } from 'next/router';
+import * as gtag from '../lib/gtag';
 
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [showScrollUp, setShowScrollUp] = useState(false);
+  const router = useRouter();
+
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      gtag.pageview(url);
+    };
+
+    router.events?.on('routeChangeComplete', handleRouteChange);
+    return () => {
+      router.events?.off('routeChangeComplete', handleRouteChange);
+    };
+  }, [router]);
 
   useEffect(() => {
     if (
