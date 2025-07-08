@@ -25,7 +25,7 @@ const Contact = () => {
     if (data.success) {
       event.target.reset();
 
-      // ✅ Send custom GA event
+      // Send custom GA event
       gtag.event({
         action: 'submit_contact_form',
         category: 'Contact',
