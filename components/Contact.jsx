@@ -2,28 +2,42 @@ import { assets } from '@/assets/assets';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import * as gtag from '@/lib/gtag'; 
 
 const Contact = () => {
   const [result, setResult] = useState('');
 
   const onSubmit = async (event) => {
-    event.preventDefault();
-    setResult('Sending...');
-    const formData = new FormData(event.target);
-    formData.append('access_key', '9bd21b46-a012-481c-9ac1-03388daf4e47');
+  event.preventDefault();
+  setResult('Sending...');
+  const formData = new FormData(event.target);
+  formData.append('access_key', '9bd21b46-a012-481c-9ac1-03388daf4e47');
 
-    try {
-      const response = await fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
-        body: formData,
+  try {
+    const response = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      body: formData,
+    });
+
+    const data = await response.json();
+    setResult(data.success ? 'Form Submitted Successfully' : data.message);
+
+    if (data.success) {
+      event.target.reset();
+
+      // ✅ Send custom GA event
+      gtag.event({
+        action: 'submit_contact_form',
+        category: 'Contact',
+        label: 'Contact Form',
+        value: 1,
       });
-      const data = await response.json();
-      setResult(data.success ? 'Form Submitted Successfully' : data.message);
-      if (data.success) event.target.reset();
-    } catch (error) {
-      setResult('Something went wrong. Please try again.');
     }
-  };
+
+  } catch (error) {
+    setResult('Something went wrong. Please try again.');
+  }
+};
 
   return (
     <motion.div
