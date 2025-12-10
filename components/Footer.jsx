@@ -44,11 +44,11 @@ const Footer = ({ isDarkMode }) => {
         className="max-w-6xl mx-auto flex flex-col items-center text-center"
       >
         {/* Logo */}
-        <a href="#home" class="group relative inline-block">
-          <span class="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-blue-600 via-purple-500 to-red-500 text-transparent bg-clip-text transition duration-300 group-hover:scale-110 group-hover:blur-[1px]">
+        <a href="#home" className="group relative inline-block">
+          <span className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-blue-600 via-purple-500 to-red-500 text-transparent bg-clip-text transition duration-300 group-hover:scale-110 group-hover:blur-[1px]">
             JOYEL
           </span>
-          <span class="absolute inset-0 animate-pulse opacity-0 group-hover:opacity-100 transition duration-300 text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-red-500 via-yellow-500 to-green-500 text-transparent bg-clip-text pointer-events-none">
+          <span className="absolute inset-0 animate-pulse opacity-0 group-hover:opacity-100 transition duration-300 text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-red-500 via-yellow-500 to-green-500 text-transparent bg-clip-text pointer-events-none">
             JOYEL
           </span>
         </a>
@@ -78,6 +78,7 @@ const Footer = ({ isDarkMode }) => {
               className="w-5 h-5"
               width={20}
               height={20}
+              style={{ width: "100%", height: "auto" }}
             />
             {contactInfo.email}
           </a>

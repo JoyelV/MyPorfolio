@@ -55,6 +55,7 @@ const Skills = () => {
                   className="w-10 h-10 object-contain"
                   width={40}
                   height={40}
+                   style={{ width: "100%", height: "auto" }}
                 />
               </div>
               <span className="text-sm md:text-base font-Outfit text-gray-700 dark:text-gray-200">

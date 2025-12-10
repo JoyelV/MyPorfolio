@@ -98,6 +98,7 @@ const Testimonials = () => {
                     className="w-8 h-8 mb-4 opacity-50"
                     width={32}
                     height={32}
+                    style={{ width: "100%", height: "auto" }}
                   />
                   <p className="text-sm md:text-base font-Outfit text-gray-700 dark:text-gray-200 mb-4">
                     {testimonial.content}

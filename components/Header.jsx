@@ -37,7 +37,7 @@ const Header = () => {
           transition={{ duration: 0.6, delay: 0.7 }}
           className="max-w-3xl mx-auto text-lg font-Outfit text-gray-600 dark:text-gray-300"
         >
-          I am a Full Stack developer(Nodejs & MongoDB) with a focus on creating(an occasionally designing) exceptional digital experiences that are fast, accessible ,visually appealing and responsive. I have over a 1.5 years of hands-on experience building projects like an e-commerce website and an e-learning platform.
+          I am a Full Stack developer(Nodejs & MongoDB) with a focus on creating(an occasionally designing) exceptional digital experiences that are fast, accessible ,visually appealing and responsive. I have over a 1 years of hands-on experience building projects like an e-commerce website and an e-learning platform.
         </motion.p>
         <div className="flex flex-col sm:flex-row items-center gap-4 mt-6">
           <motion.a
