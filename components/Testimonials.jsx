@@ -92,14 +92,7 @@ const Testimonials = () => {
                 className="flex flex-col items-center justify-between p-6 rounded-xl bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm shadow-md hover:shadow-lg transition-shadow duration-300 text-left min-w-[280px] md:min-w-[320px] max-w-[360px]"
               >
                 <div className="flex-1">
-                  <Image
-                    src={assets.user_image || '/assets/user_image.png'}
-                    alt="Quote"
-                    className="w-8 h-8 mb-4 opacity-50"
-                    width={32}
-                    height={32}
-                    style={{ width: "100%", height: "auto" }}
-                  />
+                  
                   <p className="text-sm md:text-base font-Outfit text-gray-700 dark:text-gray-200 mb-4">
                     {testimonial.content}
                   </p>
