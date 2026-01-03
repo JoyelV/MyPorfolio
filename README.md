@@ -1,9 +1,7 @@
 # Joyel Varghese - MERN Stack Developer Portfolio
-
 Welcome to the official repository for my personal portfolio website. This project showcases my skills, projects, and professional journey as a MERN Stack Developer.
 
 ## 🚀 Project Overview
-
 This portfolio is a modern, responsive web application built with **Next.js** and **Tailwind CSS**. It is designed to be fast, accessible, and visually appealing, featuring smooth animations and a clean user interface.
 
 ### Key Features
@@ -16,7 +14,6 @@ This portfolio is a modern, responsive web application built with **Next.js** an
 - **📄 Resume Download**: Direct access to my updated resume.
 
 ## 🛠️ Tech Stack
-
 - **Framework**: [Next.js](https://nextjs.org/)
 - **Library**: [React](https://react.dev/)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
@@ -24,17 +21,14 @@ This portfolio is a modern, responsive web application built with **Next.js** an
 - **Icons**: [Heroicons](https://heroicons.com/)
 
 ## 🏁 Getting Started
-
 Follow these instructions to get a copy of the project running on your local machine for development and testing purposes.
 
 ### Prerequisites
-
 Ensure you have the following installed:
 - Node.js (v18 or higher recommended)
 - npm, yarn, pnpm, or bun
 
 ### Installation
-
 1. **Clone the repository**
    ```bash
    git clone https://github.com/JoyelV/MyPorfolio.git
@@ -94,8 +88,9 @@ Ensure you have the following installed:
 
 Feel free to reach out if you have any questions or collaboration opportunities!
 
-- **Portfolio**: [Review Live Site](#) (Update with live link if available)
+- **Portfolio**: [Review Live Site](https://joyelvarghese.vercel.app/)
 - **Email**: [Contact via Website](#contact-me)
 
 ---
-*Built with ❤️ by Joyel Varghese*
+Built by Joyel Varghese
+---
