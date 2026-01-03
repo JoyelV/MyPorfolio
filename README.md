@@ -1,36 +1,101 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Joyel Varghese - MERN Stack Developer Portfolio
 
-## Getting Started
+Welcome to the official repository for my personal portfolio website. This project showcases my skills, projects, and professional journey as a MERN Stack Developer.
 
-First, run the development server:
+## 🚀 Project Overview
+
+This portfolio is a modern, responsive web application built with **Next.js** and **Tailwind CSS**. It is designed to be fast, accessible, and visually appealing, featuring smooth animations and a clean user interface.
+
+### Key Features
+- **⚡ Next.js 16**: Leveraging the latest features of the App Router for optimal performance.
+- **🎨 Tailwind CSS**: for consistent and beautiful styling.
+- **🌙 Dark/Light Mode**: Fully supported theme toggling with system preference detection.
+- **✨ Framer Motion**: Smooth, engaging animations for elements and page transitions.
+- **📱 Fully Responsive**: Optimized for all devices, from mobile phones to large desktops.
+- **📊 Google Analytics**: Integrated traffic tracking.
+- **📄 Resume Download**: Direct access to my updated resume.
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js](https://nextjs.org/)
+- **Library**: [React](https://react.dev/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [Heroicons](https://heroicons.com/)
+
+## 🏁 Getting Started
+
+Follow these instructions to get a copy of the project running on your local machine for development and testing purposes.
+
+### Prerequisites
+
+Ensure you have the following installed:
+- Node.js (v18 or higher recommended)
+- npm, yarn, pnpm, or bun
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/JoyelV/MyPorfolio.git
+   cd MyPorfolio
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   ```
+
+3. **Run the development server**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
+   ```
+
+4. **Open in Browser**
+   Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## 📁 Project Structure
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+├── app/                  # Application source code (App Router)
+│   ├── page.js           # Main landing page
+│   ├── layout.js         # Root layout and metadata
+│   └── globals.css       # Global styles and Tailwind directives
+├── components/           # Reusable UI components
+│   ├── Navbar.jsx        # Navigation bar with theme toggle
+│   ├── Header.jsx        # Hero section
+│   ├── About.jsx         # About Me section
+│   ├── Skills.jsx        # Skills showcase
+│   ├── Work.jsx          # Projects grid
+│   ├── Contact.jsx       # Contact form and details
+│   └── ...
+├── assets/               # Static assets (images, icons)
+└── public/               # Publicly accessible files
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📜 Scripts
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+| Script | Description |
+| :--- | :--- |
+| `npm run dev` | Starts the development server. |
+| `npm run build` | Builds the application for production. |
+| `npm run start` | Running the production build locally. |
+| `npm run lint` | Runs ESLint to catch code issues. |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📬 Contact Me
 
-## Learn More
+Feel free to reach out if you have any questions or collaboration opportunities!
 
-To learn more about Next.js, take a look at the following resources:
+- **Portfolio**: [Review Live Site](#) (Update with live link if available)
+- **Email**: [Contact via Website](#contact-me)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+*Built with ❤️ by Joyel Varghese*
