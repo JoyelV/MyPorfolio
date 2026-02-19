@@ -49,7 +49,7 @@ const About = ({ isDarkMode }) => {
           className="flex-1"
         >
           <p className="mb-8 max-w-2xl font-Outfit text-lg text-gray-600 dark:text-gray-300">
-            I worked as a Mechanical Engineer specializing in estimation at WALCO MIDDLE EAST WLL for five years before transitioning into Web Development. In 2024, I began my journey in this field and have since gained hands-on experience by building real-world applications, including a full-featured e-commerce website and an e-learning platform using the MERN stack.
+            I worked as a Project Engineer specializing in estimation at WALCO MIDDLE EAST WLL for five years before transitioning into Web Development. In 2024, I began my journey in this field and have since gained hands-on experience by building real-world applications, including a full-featured e-commerce website and an e-learning platform using the MERN stack.
           </p>
           <motion.ul
             initial={{ opacity: 0 }}

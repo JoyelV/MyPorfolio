@@ -47,6 +47,7 @@ import corsoTraining from './public/corsotraining.png'
 import blogApp from './public/blogApp.png'
 import bonMarineAsia from './public/bonMarineAsia.png'
 import qrBridge from './public/work-2.png'
+import siteManagement from './public/siteManagement.png'
 
 export const assets = {
   user_image,
@@ -97,7 +98,8 @@ export const assets = {
   corsoTraining,
   blogApp,
   bonMarineAsia,
-  qrBridge
+  qrBridge,
+  siteManagement
 };
 
 export const workData = [
@@ -126,10 +128,10 @@ export const workData = [
     link: 'https://doctor-s-appointment-three.vercel.app/',
   },
   {
-    title: 'QR Bridge Website',
+    title: 'Site Management Application',
     description: 'Full Stack Web development',
-    bgImage: assets.qrBridge,
-    link: 'https://qrbridge.in/dashboard',
+    bgImage: assets.siteManagement,
+    link: 'https://www.alfaheemelectromech.com/login',
   },
   {
     title: 'Corso Training Website',
@@ -141,7 +143,7 @@ export const workData = [
     title: 'Blog Website',
     description: 'NextJS & MongoDB',
     bgImage: assets.blogApp,
-    link: 'https://blog-application-lyart-pi.vercel.app/',
+    link: 'https://blog-application-frontend-black-eta.vercel.app/',
   },
 ];
 
