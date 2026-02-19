@@ -47,7 +47,7 @@ import corsoTraining from './public/corsotraining.png'
 import blogApp from './public/blogApp.png'
 import bonMarineAsia from './public/bonMarineAsia.png'
 import qrBridge from './public/work-2.png'
-import siteManagement from './public/siteManagement.png'
+import siteManagement from './siteManagement.png'
 
 export const assets = {
   user_image,
